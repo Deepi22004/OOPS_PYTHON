@@ -51,4 +51,23 @@ else:
   print("s2 wins")
 
 
+3) Method overloading :  In python true method overloading doesnot support.But we call a same method by entering  different parameters.
+ex:
+class a:
+  def __init__ (self,a=0,b=0):
+    self.a=a
+    self.b=b
+  def add(self,a=None,b=None):
+    if a!=None and b!=None:
+      return a+b
+    elif a!=None:
+      return a+self.b
+    else:
+      return self.a+self.b
+a1=a()
+print(a1.add(10))
+print(a1.add(20,30))
+print(a1.add())
+
+
 
